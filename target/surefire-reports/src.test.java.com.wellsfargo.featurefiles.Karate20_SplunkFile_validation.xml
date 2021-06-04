@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/java/com/wellsfargo/featurefiles/Karate20_SplunkFile_validation.feature" skipped="0" tests="1" time="1.882964">
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate20_SplunkFile_validation" name="Splunk file log TestCase" time="1.882964">
+    <system-out>* def login = ............................................................. passed
+* def auth = login("palmetoadmin", "P@lmeto@123") ......................... passed
+* print auth .............................................................. passed
+* configure ssl = true .................................................... passed
+Given url "https://10.0.0.60:8089" ........................................ passed
+And header Authorization = auth ........................................... passed
+Given path "/services/search/jobs" ........................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

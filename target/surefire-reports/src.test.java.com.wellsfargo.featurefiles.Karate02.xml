@@ -1,0 +1,15 @@
+<testsuite failures="1" name="src/test/java/com/wellsfargo/featurefiles/Karate02.feature" skipped="0" tests="1" time="0.377778">
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate02" name="JSON validation 2" time="0.377778">
+    <failure message="Karate02.feature:28 - assert evaluated to false: json.id == &quot;102&quot;">Given def json = .......................................................... passed
+* print json .............................................................. passed
+* print json.id ........................................................... passed
+* print json.tool.name .................................................... passed
+* assert json.id == "102" ................................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Karate02.feature:28 - assert evaluated to false: json.id == "102"&#13;
+	at ✽.* assert json.id == "102" (Karate02.feature:28)&#13;
+
+* assert json.tool.name == "Karate1" ...................................... skipped</failure>
+  </testcase>
+</testsuite>

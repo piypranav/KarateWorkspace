@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.com.wellsfargo.featurefiles.Karate19_WritingResponseToFile_validation</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-06-03 05:30:21 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:5]">[1:5] Writing to external file TestCase </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/com/wellsfargo/featurefiles/Karate19_WritingResponseToFile_validation.feature</span><span class="feature-description">Karate Test Suite 19 | This test suite for writing to external file</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:5]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:5]</span><span class="scenario-name">Writing to external file TestCase </span>
+</div>
+<div class="scenario-time passed">ms: 2116</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">* def util = Java.type("utils.BDDUtil")</div>
+</div>
+<div class="time-cell passed">42</div>
+</div>
+<div class="preformatted" data-parent="1">17:30:18.961 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given url "https://jsonplaceholder.typicode.com/posts/1"</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">1966</div>
+</div>
+<div class="preformatted" data-parent="3">17:30:20.117 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+17:30:20.851 response time in milliseconds: 720.26
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Age: 28682
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 6598c380db363c06-BLR
+1 &lt; Cache-Control: max-age=43200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Jun 2021 12:00:53 GMT
+1 &lt; Etag: W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Expires: -1
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=S98ueURNUJrn1SJGhnACq7LcelbCOTok%2FVcdn52TAlTieujFP2hJeeM5cNLmK7ywWlGe0yufVZiiGJwFlv1GkjukSI9%2FSd9pbEU0iNZNo9Tcxp1jVJH2pDd0sTPMFsyVKBryUbBdgB%2Fkiw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1622008821
+1 &lt; alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 &lt; cf-request-id: 0a7358848600003c06a101a000000001
+{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">* def result = get response</div>
+</div>
+<div class="time-cell passed">43</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">* util.writeToFile("Karate19File.json", result);</div>
+</div>
+<div class="time-cell passed">36</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#    After writing the file now reading the same and printing the output</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">* def fileResponse = read('classpath:Karate19File.json')</div>
+</div>
+<div class="time-cell passed">16</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">* print fileResponse</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="8">17:30:21.133 [print] {
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+  "userId": 1
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

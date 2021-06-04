@@ -1,0 +1,22 @@
+<testsuite failures="0" name="src/test/java/com/wellsfargo/featurefiles/Karate11_customvalidation.feature" skipped="0" tests="1" time="0.242513">
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate11_customvalidation" name="Custom Validation TestCase 5" time="0.242513">
+    <system-out>* def a = "1001" .......................................................... passed
+* def b = "1001.12" ....................................................... passed
+* def c = "test data from file" ........................................... passed
+* def d1 = "KARATE" ....................................................... passed
+* def d2 = "karate" ....................................................... passed
+* def d3 = "Karate" ....................................................... passed
+* def d4 = "karate bdd" ................................................... passed
+* def d5 = "cucumber bdd" ................................................. passed
+* match a == "#regex \\d+" ................................................ passed
+* match b == "#regex \\d+\\.\\d+" ......................................... passed
+* match d1 == "#regex [A-Z]+" ............................................. passed
+* match d2 == "#regex [a-z]+" ............................................. passed
+* match d3 == "#regex [A-Z][a-z]+" ........................................ passed
+* match d4 == "#regex (karate|cucumber) bdd" .............................. passed
+* match d5 == "#regex (karate|cucumber) bdd" .............................. passed
+* match c == "#regex (\\w+\\s?)+" ......................................... passed
+* match c == "#regex (^test\.*)" .......................................... passed
+* match c == "#regex (\.*file$)" .......................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,6 @@
+<testsuite failures="0" name="src/test/java/com/wellsfargo/featurefiles/Karate17_JavaMethodCall_validation.feature" skipped="0" tests="1" time="0.200612">
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate17_JavaMethodCall_validation" name="java static method call TestCase 1" time="0.200612">
+    <system-out>* def result1 = ........................................................... passed
+* print result1() ......................................................... passed</system-out>
+  </testcase>
+</testsuite>

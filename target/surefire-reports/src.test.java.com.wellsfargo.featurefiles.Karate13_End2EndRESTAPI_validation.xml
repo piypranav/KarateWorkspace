@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/java/com/wellsfargo/featurefiles/Karate13_End2EndRESTAPI_validation.feature" skipped="0" tests="1" time="2.444809">
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate13_End2EndRESTAPI_validation" name="End to End rest Api test" time="2.444809">
+    <system-out>Given url "https://jsonplaceholder.typicode.com/posts" .................... passed
+And header Content-type = "application/json; charset=UTF-8" ............... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,93 @@
+<testsuite failures="0" name="src/test/java/com/wellsfargo/featurefiles/Karate18_DBInteractions_validation.feature" skipped="0" tests="5" time="2.403176">
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate18_DBInteractions_validation" name="Select validation DB interaction TestCase" time="1.946772">
+    <system-out>* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate18_DBInteractions_validation" name="Insert validation DB interaction TestCase" time="0.154858">
+    <system-out>* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed
+* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def results = db.insertStatement("insert into tools values(9209,'sample9209','xyz9209')") . passed
+* print results ........................................................... passed
+* match results == "Success" .............................................. passed
+* def rows = db.selectStatement("select * from tools where toolid=9209") .. passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate18_DBInteractions_validation" name="Select validation DB interaction TestCase" time="0.054603">
+    <system-out>* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed
+* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def results = db.insertStatement("insert into tools values(9209,'sample9209','xyz9209')") . passed
+* print results ........................................................... passed
+* match results == "Success" .............................................. passed
+* def rows = db.selectStatement("select * from tools where toolid=9209") .. passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed
+* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate18_DBInteractions_validation" name="Update validation DB interaction TestCase" time="0.137492">
+    <system-out>* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed
+* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def results = db.insertStatement("insert into tools values(9209,'sample9209','xyz9209')") . passed
+* print results ........................................................... passed
+* match results == "Success" .............................................. passed
+* def rows = db.selectStatement("select * from tools where toolid=9209") .. passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed
+* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed
+* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rowseffected = db.updateStatement("update tools set toolname='sample9209' where toolid=9209") . passed
+* print rowseffected ...................................................... passed
+* assert rowseffected &gt;= 1 ................................................ passed
+* def rows = db.selectStatement("select * from tools where toolid=9209") .. passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate18_DBInteractions_validation" name="Delete validation DB interaction TestCase" time="0.109451">
+    <system-out>* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed
+* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def results = db.insertStatement("insert into tools values(9209,'sample9209','xyz9209')") . passed
+* print results ........................................................... passed
+* match results == "Success" .............................................. passed
+* def rows = db.selectStatement("select * from tools where toolid=9209") .. passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed
+* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed
+* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rowseffected = db.updateStatement("update tools set toolname='sample9209' where toolid=9209") . passed
+* print rowseffected ...................................................... passed
+* assert rowseffected &gt;= 1 ................................................ passed
+* def rows = db.selectStatement("select * from tools where toolid=9209") .. passed
+* print rows .............................................................. passed
+* match rows contains "sample9209" ........................................ passed
+* def db = Java.type('utils.MyDBUtils') ................................... passed
+* def rowseffected = db.updateStatement("delete from tools where toolid=9209") . passed
+* print rowseffected ...................................................... passed
+* assert rowseffected &gt;= 1 ................................................ passed
+* def rows = db.selectStatement("select * from tools where toolid=9209") .. passed
+* print rows .............................................................. passed
+* match rows !contains "sample9209" ....................................... passed</system-out>
+  </testcase>
+</testsuite>

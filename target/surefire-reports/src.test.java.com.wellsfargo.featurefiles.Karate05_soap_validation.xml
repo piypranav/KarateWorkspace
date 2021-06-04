@@ -1,0 +1,18 @@
+<testsuite failures="0" name="src/test/java/com/wellsfargo/featurefiles/Karate05_soap_validation.feature" skipped="0" tests="1" time="2.237189">
+  <testcase classname="src.test.java.com.wellsfargo.featurefiles.Karate05_soap_validation" name="SOAP 1.2 validation test case 1" time="2.237189">
+    <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "application/soap+xml; charset=utf-8" ........... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print responseHeaders ................................................... passed
+* match responseHeaders["Server"] == ["Microsoft-IIS/7.5"] ................ passed
+* match responseHeaders["Server"][0] == "Microsoft-IIS/7.5" ............... passed
+* match responseType == "xml" ............................................. passed
+* print response .......................................................... passed
+* match response contains "104" ........................................... passed
+* match response //CelsiusToFahrenheitResult == 104 ....................... passed
+* assert responseTime &lt;= 2000 ............................................. passed
+* print responseTime ...................................................... passed</system-out>
+  </testcase>
+</testsuite>

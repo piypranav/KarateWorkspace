@@ -1,0 +1,180 @@
+15:21:39.631 From karate-config file 
+15:21:40.787 request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+15:21:41.490 response time in milliseconds: 686.49
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 28
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 65a0446bfc7e3c12-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 04 Jun 2021 09:52:14 GMT
+1 < Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=C9PeZGMlSruPlIzFKoNeiHHPwmgR%2FhdhjtlqBenTEKn%2B5jcEXuU3ZGmREds8xRyOKnk%2BSGZe%2BfUyJJA8nUAwQoBOS%2Fb4C4%2FQxy%2F1EDaHIpaTCzDcxK7b"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 < cf-request-id: 0a7809177e00003c120f9e9000000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+15:21:41.506 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "color": "#98B2D1",
+      "year": 2000,
+      "name": "cerulean",
+      "id": 1,
+      "pantone_value": "15-4020"
+    },
+    {
+      "color": "#C74375",
+      "year": 2001,
+      "name": "fuchsia rose",
+      "id": 2,
+      "pantone_value": "17-2031"
+    },
+    {
+      "color": "#BF1932",
+      "year": 2002,
+      "name": "true red",
+      "id": 3,
+      "pantone_value": "19-1664"
+    },
+    {
+      "color": "#7BC4C4",
+      "year": 2003,
+      "name": "aqua sky",
+      "id": 4,
+      "pantone_value": "14-4811"
+    },
+    {
+      "color": "#E2583E",
+      "year": 2004,
+      "name": "tigerlily",
+      "id": 5,
+      "pantone_value": "17-1456"
+    },
+    {
+      "color": "#53B0AE",
+      "year": 2005,
+      "name": "blue turquoise",
+      "id": 6,
+      "pantone_value": "15-5217"
+    }
+  ],
+  "page": 1,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+15:21:41.521 after scenario inside config 
+,"key":null,"value":"val3","partition":0,"offset":1},{"topic":"piyush_topic","key":null,"value":123.3,"partition":0,"offset":2}]
+
+15:06:36.327 [print] [
+  {
+    "partition": 0,
+    "offset": 0,
+    "topic": "piyush_topic",
+    "value": "key-value3",
+    "key": "key3"
+  },
+  {
+    "partition": 0,
+    "offset": 1,
+    "topic": "piyush_topic",
+    "value": "val3",
+    "key": null
+  },
+  {
+    "partition": 0,
+    "offset": 2,
+    "topic": "piyush_topic",
+    "value": 123.3,
+    "key": null
+  }
+]
+
+15:06:36.343 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:06:36.359 request:
+1 > GET http://10.0.0.60:8082/consumers/my-consumer-group/instances/piyush_consumer/assignments
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 10.0.0.60:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+15:06:36.390 response time in milliseconds: 19.32
+1 < 200
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 04 Jun 2021 09:37:09 GMT
+1 < Vary: Accept-Encoding, User-Agent
+{"partitions":[{"topic":"piyush_topic","partition":0}]}
+
+15:06:36.390 [print] {
+  "partitions": [
+    {
+      "partition": 0,
+      "topic": "piyush_topic"
+    }
+  ]
+}
+
+15:06:36.421 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:06:36.437 request:
+1 > DELETE http://10.0.0.60:8082/consumers/my-consumer-group/instances/piyush_consumer/subscription
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 10.0.0.60:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+15:06:36.452 response time in milliseconds: 18.20
+1 < 204
+1 < Date: Fri, 04 Jun 2021 09:37:09 GMT
+
+15:06:36.515 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:06:36.530 request:
+1 > DELETE http://10.0.0.60:8082/consumers/my-consumer-group/instances/piyush_consumer
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 10.0.0.60:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+15:06:36.546 response time in milliseconds: 21.30
+1 < 204
+1 < Date: Fri, 04 Jun 2021 09:37:09 GMT
+
+15:06:36.577 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:06:36.577 request:
+1 > DELETE http://10.0.0.60:8082/consumers/my-consumer-group/instances/piyush_consumer
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 10.0.0.60:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+15:06:36.593 response time in milliseconds: 18.73
+1 < 404
+1 < Content-Length: 61
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 04 Jun 2021 09:37:09 GMT
+{"error_code":40403,"message":"Consumer instance not found."}
+
